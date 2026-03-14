@@ -1,0 +1,51 @@
+// Extra small devices (portrait phones, less than 576px)
+@mixin xsm {
+    @media (max-width: 575.98px) {
+        @content;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin sm {
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        @content;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin tab {
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        @content;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin lg {
+    @media (min-width: 1024px) and (max-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
+        @content;
+    }
+}
+
+@mixin xlg {
+    @media (min-width: 1441px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
+        @content;
+    }
+}
+@mixin xlg2 {
+    @media (min-width: 1441px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1921px) and (max-width: 2499px) {
+        @content;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@mixin xxl {
+    @media (min-width: 2500px) {
+        @content;
+    }
+}
