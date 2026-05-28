@@ -192,9 +192,10 @@ const ContactUs = () => {
                                             </p>
                                         ) : (
                                             <p className="mailsection-sub">
-                                                ENVIGUIDE TECHNO SOLUTIONS PRIVATE LIMITED<br />
-                                                WeWork Krishe Emerald, 0A119, Kondapur Main Road,<br />
-                                                Laxmi Cyber City, Whitefield’s, Hyderabad – 500084.
+                                                ENVIGUIDE TECHNO SOLUTIONS Pvt Ltd<br />
+                                                WeWork Krishe Emerald, 0A119,<br />
+                                                Kondapur Main Road, Laxmi Cyber City,<br />
+                                                Whitefield’s, Hyderabad – 500084.
                                             </p>
                                         )}
                                     </div>

@@ -4149,9 +4149,11 @@ header {
 }
 .contactus-mainsection .contactus-section2 .contact-section4 .mailsection .mailsection-sub {
   font-family: Poppins-Regular;
-  font-size: 18px;
+  font-size: 15px;
+  line-height: 1.6;
   color: #78798e;
   margin: 0px;
+  text-align: center;
 }
 @media (max-width: 575.98px) {
   .contactus-mainsection .contactus-section2 .contact-section4 .mailsection .mailsection-sub {
