@@ -23,6 +23,7 @@ const ContactUs = () => {
 
     const [errors, setErrors] = useState({});
     const [loading, setLoading] = useState(false);
+    const [activeOffice, setActiveOffice] = useState('germany'); // Visit Our Office tab: 'germany' | 'india'
 
     const handleSubmit = async (e) => {
         e.preventDefault(); // prevent page reload
@@ -90,11 +91,6 @@ const ContactUs = () => {
         window.location.href = mailtoLink;
     };
 
-    const makeCall = () => {
-        const phoneNumber = "+919986331158"; // Replace with a valid phone number
-        const telLink = `tel:${phoneNumber}`;
-        window.location.href = telLink;
-    };
 
 
     return (
@@ -140,15 +136,12 @@ const ContactUs = () => {
                                     </NavLink>
                                 </div>
                                 <div className="col-md-4">
-                                    <NavLink onClick={makeCall} style={{ textDecoration: 'none' }}>
-                                        <div className="mailsection">
-                                            <div className="contactus-imiconbg">
-                                                <img className="contactus-imicon" src="../assets/images/phone-call.png" alt="email" />
-                                            </div>
-                                            <h3 className="mailsection-head">Call Us Anytime</h3>
-                                            <p className="mailsection-sub">+91 9986331158</p>
+                                    <div className="mailsection">
+                                        <div className="contactus-imiconbg">
+                                            <img className="contactus-imicon" src="../assets/images/phone-call.png" alt="email" />
                                         </div>
-                                    </NavLink>
+                                        <h3 className="mailsection-head">Call Us Anytime</h3>
+                                    </div>
                                 </div>
                                 <div className="col-md-4">
                                     <div className="mailsection">
@@ -156,7 +149,54 @@ const ContactUs = () => {
                                             <img className="contactus-imicon" src="../assets/images/location.png" alt="email" />
                                         </div>
                                         <h3 className="mailsection-head">Visit Our Office</h3>
-                                        <p className="mailsection-sub">Hyderabad, Telangana, India - 500049.</p>
+                                        <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginBottom: '14px' }}>
+                                            <button
+                                                type="button"
+                                                onClick={() => setActiveOffice('germany')}
+                                                style={{
+                                                    cursor: 'pointer',
+                                                    border: '1px solid #9afb00',
+                                                    borderRadius: '20px',
+                                                    padding: '6px 18px',
+                                                    fontWeight: 600,
+                                                    transition: 'all 0.2s ease',
+                                                    backgroundColor: activeOffice === 'germany' ? '#9afb00' : 'transparent',
+                                                    color: '#000000',
+                                                }}
+                                            >
+                                                Germany
+                                            </button>
+                                            <button
+                                                type="button"
+                                                onClick={() => setActiveOffice('india')}
+                                                style={{
+                                                    cursor: 'pointer',
+                                                    border: '1px solid #9afb00',
+                                                    borderRadius: '20px',
+                                                    padding: '6px 18px',
+                                                    fontWeight: 600,
+                                                    transition: 'all 0.2s ease',
+                                                    backgroundColor: activeOffice === 'india' ? '#9afb00' : 'transparent',
+                                                    color: '#000000',
+                                                }}
+                                            >
+                                                India
+                                            </button>
+                                        </div>
+                                        {activeOffice === 'germany' ? (
+                                            <p className="mailsection-sub">
+                                                Zukunft.Gründen – Enviguide<br />
+                                                Hechinger Str. 12<br />
+                                                72622 Nürtingen,<br />
+                                                Baden-Württemberg, Germany
+                                            </p>
+                                        ) : (
+                                            <p className="mailsection-sub">
+                                                ENVIGUIDE TECHNO SOLUTIONS PRIVATE LIMITED<br />
+                                                WeWork Krishe Emerald, 0A119, Kondapur Main Road,<br />
+                                                Laxmi Cyber City, Whitefield’s, Hyderabad – 500084.
+                                            </p>
+                                        )}
                                     </div>
                                 </div>
                             </div>

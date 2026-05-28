@@ -3,6 +3,15 @@
 
 <head>
   <meta charset="utf-8" />
+  <!-- Force the canonical domain: send Firebase's default URLs to enviguide.com -->
+  <script>
+    (function () {
+      var h = window.location.hostname;
+      if (h === 'enviguide-web.web.app' || h === 'enviguide-web.firebaseapp.com') {
+        window.location.replace('https://enviguide.com' + window.location.pathname + window.location.search + window.location.hash);
+      }
+    })();
+  </script>
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
