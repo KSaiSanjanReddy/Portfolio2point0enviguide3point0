@@ -444,8 +444,24 @@ const Home = () => {
                         {/* <p className="section10-content">“Enviguide turned sustainability reporting into a growth lever for our supply chain.”</p>
                         <p className="section10-content2">Head of Sustainability, Tier 1 Automotive Supplier</p> */}
                         <div className="Supported-section">
-                            <p className="Supported-name">Supported by</p>
-                            <img data-aos="flip-right" data-aos-duration="800" data-aos-delay="300" className="Supported-im" src="../assets/images/ZukunftGruenden.png" alt="ZukunftGruenden" />
+                            <p className="Supported-name">Our Partners</p>
+                            <p style={{ fontFamily: 'Poppins-Regular', fontSize: '18px', color: '#000000', margin: '0px 0px 45px 0px' }}>
+                                Accelerated and supported by premier global innovation and startup ecosystems in Germany and India
+                            </p>
+                            <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '45px 65px' }}>
+                                <img data-aos="fade-up" data-aos-duration="800" src="../assets/images/ZukunftGruenden.png" alt="Zukunft.Gründen"
+                                    style={{ height: '88px', width: 'auto', objectFit: 'contain', backgroundColor: '#000000', padding: '10px 16px', borderRadius: '8px' }} />
+                                <img data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" src="../assets/images/partners/aic-thub.png" alt="Atal Incubation Center and t-hub"
+                                    style={{ height: '75px', width: 'auto', maxWidth: '230px', objectFit: 'contain' }} />
+                                <img data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" src="../assets/images/partners/sparkle.png" alt="Sparkle - An AIC T-Hub Program"
+                                    style={{ height: '62px', width: 'auto', maxWidth: '230px', objectFit: 'contain' }} />
+                                <img data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" src="../assets/images/partners/niti-aayog.png" alt="NITI Aayog"
+                                    style={{ height: '88px', width: 'auto', maxWidth: '200px', objectFit: 'contain' }} />
+                                <img data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" src="../assets/images/partners/aim.jpg" alt="Atal Innovation Mission"
+                                    style={{ height: '78px', width: 'auto', maxWidth: '220px', objectFit: 'contain' }} />
+                                <img data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" src="../assets/images/partners/g20.jpg" alt="G20 2023 India"
+                                    style={{ height: '82px', width: 'auto', maxWidth: '190px', objectFit: 'contain' }} />
+                            </div>
                         </div>
                     </div>
                 </div>
